@@ -1,0 +1,1 @@
+架构的分化：Encoder-Decoder → GPT（Decoder-only）vs BERT（Encoder-only）

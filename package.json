@@ -1,0 +1,27 @@
+{
+  "name": "easyagentbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "honkit serve",
+    "build": "honkit build ./ ./_book",
+    "pdf": "honkit pdf ./ ./book.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lanvender4444/An-Easy-AI-Agent-Book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lanvender4444/An-Easy-AI-Agent-Book/issues"
+  },
+  "homepage": "https://github.com/Lanvender4444/An-Easy-AI-Agent-Book#readme",
+  "devDependencies": {
+    "honkit": "^6.2.2"
+  }
+}
