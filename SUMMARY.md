@@ -13,7 +13,7 @@
     * [LoopEngineering与其他]
 * [第三部分：支撑技术](part3/README.md)
   * [第十一章：RAG]
-  * [记忆系统]
+  * [第十二章：记忆系统]
 * [第四部分：主流框架]
   * [PydanticAI（pi）]
   * [LangChain生态（LangChain/LangGraph/LangSmith]

@@ -1,0 +1,556 @@
+{
+  "collection": "Awesome-Agent-Memory-Papers",
+  "description": "LLM / 多模态智能体「记忆」论文精选目录：方法、基准与综述，涵盖情景/语义/过程/多模态记忆，参数化(内部)与检索式(外部)存储，以及 prompt / SFT / RL 三种学习方式。",
+  "dashboard": "https://yyyujintang.github.io/Awesome-Agent-Memory-Papers/",
+  "counts": { "total": 90, "surveys": 7, "benchmarks": 31, "methods": 52 },
+  "generated": "2026-06-21",
+  "papers": [
+    {
+      "id": "2602.06052", "title": "Rethinking Memory Mechanisms of Foundation Agents in the Second Half: A Survey",
+      "authors": "Wei-Chieh Huang 等(60+)", "date": "2026-01", "venue": "Survey", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2602.06052", "pdf": "https://arxiv.org/pdf/2602.06052", "code": "https://github.com/AgentMemoryWorld/Awesome-Agent-Memory",
+      "summary": "面向 AI「下半场」(强调真实长时程效用而非刷分)的智能体记忆综述。指出在长时程、动态、依赖用户的环境中智能体面临上下文爆炸，必须持续积累、管理并选择性复用海量信息，记忆因此成为填补效用鸿沟的关键。沿记忆载体(内部/外部)、认知机制(情景/语义/感觉/工作/过程)、记忆主体(智能体中心 vs 用户中心)三维统一已有工作，是当前最全面的智能体记忆综述之一。"
+    },
+    {
+      "id": "2512.23343", "title": "AI Meets Brain: Memory Systems from Cognitive Neuroscience to Autonomous Agents",
+      "authors": "Jiafeng Liang, Bing Qin 等(哈工大)", "date": "2025-12-29", "venue": "Survey, 57 页", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2512.23343", "pdf": "https://arxiv.org/pdf/2512.23343", "code": null,
+      "summary": "打通认知神经科学与 LLM 智能体的跨学科综述。沿「神经科学→LLM→智能体」递进轨迹厘清记忆定义与功能，从生物与人工双重视角对比记忆分类、存储机制与完整管理生命周期，综述主流评测基准，并从攻防双视角讨论记忆安全，展望多模态记忆与技能习得方向。"
+    },
+    {
+      "id": "2512.13564", "title": "Memory in the Age of AI Agents",
+      "authors": "Yuyang Hu, Shichun Liu, Guibin Zhang, Shuicheng Yan 等(复旦)", "date": "2025-12-15", "venue": "Survey", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2512.13564", "pdf": "https://arxiv.org/pdf/2512.13564", "code": "https://github.com/Shichun-Liu/Agent-Memory-Paper-List",
+      "summary": "针对智能体记忆领域日益碎片化，先将其与 LLM memory、RAG、context engineering 区分，再用 forms / functions / dynamics 三视角统一剖析：形态分 token级/参数化/潜变量，功能分事实性/经验性/工作记忆，动态分析记忆的形成、演化与检索。提出把记忆视为智能体设计「一等公民」，并展望记忆自动化、与 RL 融合、多模态、多智能体、可信性五大前沿。"
+    },
+    {
+      "id": "2512.04123", "title": "Measuring Agents in Production",
+      "authors": "(生产实践实证研究团队)", "date": "2025-12-02", "venue": "Survey/Empirical", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2512.04123", "pdf": "https://arxiv.org/pdf/2512.04123", "code": null,
+      "summary": "首个大规模生产环境智能体实证研究：问卷调查 306 名从业者并跨 26 领域做 20 个深度访谈。结论显示生产级智能体倾向简单可控方案——68% 在需人工介入前最多执行 10 步，70% 直接提示现成模型而非调权重，74% 主要靠人工评测。对记忆研究的启示是真实落地高度受限，长时程自主与稳健记忆仍是瓶颈。"
+    },
+    {
+      "id": "2503.18016", "title": "Retrieval Augmented Generation and Understanding in Vision: A Survey and New Outlook",
+      "authors": "Xu Zheng, Xuming Hu 等", "date": "2025-03-23", "venue": "Survey, 19 页", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2503.18016", "pdf": "https://arxiv.org/pdf/2503.18016", "code": null,
+      "summary": "首个系统综述 RAG 在计算机视觉中的应用，分视觉理解(图像识别、医学报告生成、多模态问答)与视觉生成(图像/视频/3D)两大块，并扩展到具身 AI 的规划、执行、感知与交互。可视为「外部多模态记忆」在视觉域的代表性总结，指出该方向尚处早期并提出未来方向。"
+    },
+    {
+      "id": "2501.11739", "title": "Episodic Memory in AI Agents Poses Risks That Should Be Studied and Mitigated",
+      "authors": "(安全/立场综述团队)", "date": "2025-01-20", "venue": "Survey/Position", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2501.11739", "pdf": "https://arxiv.org/pdf/2501.11739", "code": null,
+      "summary": "立场型综述。指出情景记忆一方面可让用户更好地监控、理解、控制智能体行为(利于安全)，另一方面作为广用新能力会引入重大新风险。系统梳理收益与风险，提出 4 条指导原则，呼吁在能力普及前及早研究治理。"
+    },
+    {
+      "id": "2404.13501", "title": "A Survey on the Memory Mechanism of Large Language Model based Agents",
+      "authors": "Zeyu Zhang, Ji-Rong Wen 等(人大)", "date": "2024-04-21", "venue": "Survey, 39 页", "category": "Survey", "tags": ["Survey"],
+      "abs": "https://arxiv.org/abs/2404.13501", "pdf": "https://arxiv.org/pdf/2404.13501", "code": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
+      "summary": "该领域奠基性综述。回答「记忆是什么、为何需要」，系统梳理记忆模块的设计与评测方法，并展示记忆在各类智能体应用中的作用，抽象出通用设计模式并指出局限与未来方向，被后续大量工作引用。"
+    },
+
+    {
+      "id": "2601.04745", "title": "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
+      "authors": "(QuantaAlpha)", "date": "2026-01-08", "venue": "Benchmark", "category": "Benchmark", "subcategory": "QA", "tags": ["Benchmark", "QA"],
+      "abs": "https://arxiv.org/abs/2601.04745", "pdf": "https://arxiv.org/pdf/2601.04745", "code": "https://github.com/QuantaAlpha/KnowMeBench",
+      "summary": "基于长篇自传式叙事构建的人物理解基准，将叙事重构为闪回感知、时间锚定的事件流，用证据链问题评测事实回忆、主观状态归因与原则级推理。发现检索增强主要提升事实准确率，而时间锚定解释与高层推断仍出错，强调需要超越检索的记忆机制。"
+    },
+    {
+      "id": "2601.03515", "title": "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents",
+      "authors": "Yuanchen Bei, Hanghang Tong 等(UIUC)", "date": "2026-01-07", "venue": "Benchmark, 34 页", "category": "Benchmark", "subcategory": "QA", "tags": ["Benchmark", "QA", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2601.03515", "pdf": "https://arxiv.org/pdf/2601.03515", "code": null,
+      "summary": "针对 MLLM 智能体的多模态长期对话记忆基准。提供图文 grounded 的多会话长交互数据，沿记忆抽取与测试时自适应、记忆推理、记忆知识管理三维评测。对 13 个记忆系统测试发现需显式多模态保留与组织，记忆推理与知识管理仍受限，且现有模型存在效率瓶颈。"
+    },
+    {
+      "id": "2507.05257", "title": "MemoryAgentBench: Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions",
+      "authors": "Yuanzhe Hu 等(HUST)", "date": "2025-07-07", "venue": "ICLR26", "category": "Benchmark", "subcategory": "QA", "tags": ["Benchmark", "QA"],
+      "abs": "https://arxiv.org/abs/2507.05257", "pdf": "https://arxiv.org/pdf/2507.05257", "code": "https://github.com/HUST-AI-HYZ/MemoryAgentBench",
+      "summary": "将记忆评测拆为精确检索、测试时学习、长程理解、冲突消解四种核心能力，通过增量式多轮交互注入信息以避免一次性长上下文。综合现有与新构数据集，揭示主流记忆智能体在这四维上各有短板，是被广泛引用的记忆评测套件。"
+    },
+    {
+      "id": "2410.10813", "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "authors": "(LongMemEval 团队)", "date": "2024-10-14", "venue": "Benchmark", "category": "Benchmark", "subcategory": "QA", "tags": ["Benchmark", "QA"],
+      "abs": "https://arxiv.org/abs/2410.10813", "pdf": "https://arxiv.org/pdf/2410.10813", "code": null,
+      "summary": "聊天助手长期交互记忆基准，定义信息抽取、多会话推理、时间推理、知识更新、拒答五项核心能力。通过在长交互历史中插入针式信息，系统暴露主流长上下文/检索方案在长期记忆上的显著退化，是常用对照基准。"
+    },
+    {
+      "id": "2402.17753", "title": "LoCoMo: Evaluating Very Long-Term Conversational Memory of LLM Agents",
+      "authors": "(LoCoMo 团队)", "date": "2024-02-27", "venue": "Benchmark", "category": "Benchmark", "subcategory": "QA", "tags": ["Benchmark", "QA"],
+      "abs": "https://arxiv.org/abs/2402.17753", "pdf": "https://arxiv.org/pdf/2402.17753", "code": null,
+      "summary": "开创性构建超长期多会话对话(平均数百轮、跨多日)，配套问答、事件图与多模态对话生成管线。系统衡量长期一致性、时间推理与多跳记忆，证明长上下文 LLM 在超长对话上仍大幅落后人类，奠定后续长期对话记忆评测范式。"
+    },
+    {
+      "id": "WebChoreArena", "title": "WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks",
+      "authors": "(WebChoreArena 团队)", "date": "2025-06-02", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://webchorearena.github.io/", "pdf": null, "code": null,
+      "summary": "针对繁琐、重复的真实网页任务(如批量信息核对、跨页汇总)，相较 WebArena 更强调记忆与长程一致性，揭示智能体在冗长机械任务上的稳健性不足。"
+    },
+    {
+      "id": "2504.10445", "title": "RealWebAssist: A Benchmark for Long-Horizon Web Assistance with Real-World Users",
+      "authors": "(RealWebAssist 团队)", "date": "2025-04-14", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://arxiv.org/abs/2504.10445", "pdf": "https://arxiv.org/pdf/2504.10445", "code": null,
+      "summary": "聚焦与真实用户的长时程网页协助：指令含糊、目标演化、需跨步骤记住用户偏好与上下文，强调用户意图随时间漂移下的记忆与适应能力。"
+    },
+    {
+      "id": "2412.05467", "title": "The BrowserGym Ecosystem for Web Agent Research",
+      "authors": "(ServiceNow/Mila 等)", "date": "2024-12-06", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://arxiv.org/abs/2412.05467", "pdf": "https://arxiv.org/pdf/2412.05467", "code": null,
+      "summary": "统一的 Web 智能体研究生态/环境，整合 WebArena、VisualWebArena、WorkArena、MiniWoB 等多个基准于一致接口，便于复现与公平比较，是 Web 智能体评测的基础设施。"
+    },
+    {
+      "id": "2401.13649", "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+      "authors": "(CMU web-arena-x)", "date": "2024-01-24", "venue": "ACL24", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2401.13649", "pdf": "https://arxiv.org/pdf/2401.13649", "code": "https://github.com/web-arena-x/visualwebarena",
+      "summary": "在 WebArena 基础上加入视觉真实任务，要求智能体理解截图/图像内容完成购物、论坛等任务，考察多模态感知加规划，揭示纯文本智能体在视觉网页上的不足。"
+    },
+    {
+      "id": "2307.13854", "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "authors": "Shuyan Zhou 等", "date": "2023-07-25", "venue": "ICLR24", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://arxiv.org/abs/2307.13854", "pdf": "https://arxiv.org/pdf/2307.13854", "code": null,
+      "summary": "里程碑式可复现 Web 环境，含真实功能站点(购物、论坛、CMS、地图)与功能正确性评测。表明当时最强 LLM 成功率远低于人类，成为 Web 智能体的标准评测场。"
+    },
+    {
+      "id": "2306.06070", "title": "Mind2Web: Towards a Generalist Agent for the Web",
+      "authors": "(OSU)", "date": "2023-06-09", "venue": "NeurIPS23 Spotlight", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://arxiv.org/abs/2306.06070", "pdf": "https://arxiv.org/pdf/2306.06070", "code": null,
+      "summary": "首个面向通用网页智能体的大规模数据集，覆盖 137 个真实网站、2000+ 开放式任务，评测跨域/跨网站/跨任务泛化，推动 HTML 元素定位与动作预测研究。"
+    },
+    {
+      "id": "2207.01206", "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+      "authors": "(Princeton NLP)", "date": "2022-07-04", "venue": "NeurIPS22", "category": "Benchmark", "subcategory": "Web", "tags": ["Benchmark", "Web"],
+      "abs": "https://arxiv.org/abs/2207.01206", "pdf": "https://arxiv.org/pdf/2207.01206", "code": "https://github.com/princeton-nlp/WebShop",
+      "summary": "模拟百万商品的电商网站，语言指令到浏览/搜索/点击购买的 grounded 交互环境。是早期 Web 智能体的奠基基准，支持模仿与强化学习并能 sim2real 迁移到真实购物网站。"
+    },
+    {
+      "id": "2604.06126", "title": "Gym-Anything: Turn any Software into an Agent Environment",
+      "authors": "(Gym-Anything 团队)", "date": "2026-04-07", "venue": "Benchmark", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI"],
+      "abs": "https://arxiv.org/abs/2604.06126", "pdf": "https://arxiv.org/pdf/2604.06126", "code": null,
+      "summary": "提出将任意软件自动封装为智能体可交互环境的框架，大幅降低构建 GUI/桌面智能体训练与评测环境的门槛，支持长时程任务与记忆评测。"
+    },
+    {
+      "id": "2602.06075", "title": "MemGUI-Bench: Benchmarking Memory of Mobile GUI Agents in Dynamic Environments",
+      "authors": "(MemGUI-Bench 团队)", "date": "2026-02-03", "venue": "Benchmark", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI"],
+      "abs": "https://arxiv.org/abs/2602.06075", "pdf": "https://arxiv.org/pdf/2602.06075", "code": "https://github.com/lgy0404/MemGUI-Bench",
+      "summary": "专门评测移动 GUI 智能体在动态环境中的记忆：界面随时间变化、需记住此前操作与状态以避免重复或错误，填补 GUI 智能体长期记忆评测空白。"
+    },
+    {
+      "id": "2601.20650", "title": "OS-Marathon: Benchmarking Computer-Use Agents on Long-Horizon Repetitive Tasks",
+      "authors": "(OS-Marathon 团队)", "date": "2026-01-28", "venue": "Benchmark", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI"],
+      "abs": "https://arxiv.org/abs/2601.20650", "pdf": "https://arxiv.org/pdf/2601.20650", "code": null,
+      "summary": "面向 computer-use 智能体的长时程重复(马拉松式)任务，考察在大量相似步骤中保持记忆、避免漂移与累积误差的能力。"
+    },
+    {
+      "id": "BK7Mk5d4WE", "title": "LongHorizonUI: A Unified Framework for Robust Long-Horizon Task Automation of GUI Agent",
+      "authors": "(LongHorizonUI 团队)", "date": "2026-01-26", "venue": "ICLR26", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI"],
+      "abs": "https://openreview.net/forum?id=BK7Mk5d4WE", "pdf": null, "code": null,
+      "summary": "为 GUI 智能体长时程任务自动化提出统一鲁棒框架，整合记忆/状态跟踪以应对长任务中的错误恢复与一致性。"
+    },
+    {
+      "id": "2408.06327", "title": "VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents",
+      "authors": "(清华 唐杰)", "date": "2024-08-12", "venue": "Benchmark", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2408.06327", "pdf": "https://arxiv.org/pdf/2408.06327", "code": "https://github.com/THUDM/VisualAgentBench",
+      "summary": "系统评测 LMM 作为视觉基础智能体在具身、GUI、视觉设计等多场景的能力，提供统一训练/评测，推动多模态智能体发展。"
+    },
+    {
+      "id": "2404.07972", "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "authors": "(xlang-ai)", "date": "2024-04-11", "venue": "NeurIPS24", "category": "Benchmark", "subcategory": "GUI", "tags": ["Benchmark", "GUI", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2404.07972", "pdf": "https://arxiv.org/pdf/2404.07972", "code": "https://github.com/xlang-ai/OSWorld",
+      "summary": "首个真实操作系统(Ubuntu/Windows/macOS)中的开放式任务基准，369 个跨应用真实任务加基于执行的可靠评测，揭示智能体在真实桌面环境上成功率极低，成为 computer-use 标准基准。"
+    },
+    {
+      "id": "2602.23166", "title": "AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios",
+      "authors": "Junxian He, May Fung 等", "date": "2026-02-26", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2602.23166", "pdf": "https://arxiv.org/pdf/2602.23166", "code": null,
+      "summary": "面向超高难度真实视觉场景的多模态智能体评测，强调复杂视觉理解与长程决策，揭示当前 MLLM 智能体在极具挑战的现实场景中的能力边界。"
+    },
+    {
+      "id": "2602.02465", "title": "MentisOculi: Revealing the Limits of Reasoning with Mental Imagery",
+      "authors": "(MentisOculi 团队)", "date": "2026-02-02", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied"],
+      "abs": "https://arxiv.org/abs/2602.02465", "pdf": "https://arxiv.org/pdf/2602.02465", "code": null,
+      "summary": "考察模型借助心理意象(mental imagery)推理的极限——在缺乏外部图像时于脑内构建并操作视觉表征，揭示视觉工作记忆/想象推理的不足。"
+    },
+    {
+      "id": "2504.15485", "title": "CAPTURe: Evaluating Spatial Reasoning in VLMs via Occluded Object Counting",
+      "authors": "Mohit Bansal 等", "date": "2025-04-21", "venue": "ICCV25", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied"],
+      "abs": "https://arxiv.org/abs/2504.15485", "pdf": "https://arxiv.org/pdf/2504.15485", "code": null,
+      "summary": "用遮挡物体计数巧妙考察视觉语言模型的空间推理：需推断被遮挡部分的物体数量，依赖空间记忆与 amodal 补全，发现 VLM 在遮挡下显著退化。"
+    },
+    {
+      "id": "2010.03768", "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+      "authors": "(ALFWorld 团队)", "date": "2020-10-08", "venue": "ICLR21", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied"],
+      "abs": "https://arxiv.org/abs/2010.03768", "pdf": "https://arxiv.org/pdf/2010.03768", "code": null,
+      "summary": "将具身任务(ALFRED)与文本世界对齐，可在抽象文本环境中学习再迁移到具身执行，是「先在文本中规划/记忆、再具身落地」范式的奠基环境，被大量记忆/规划智能体采用。"
+    },
+    {
+      "id": "1912.01734", "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+      "authors": "(ALFRED 团队)", "date": "2019-12-03", "venue": "CVPR20", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied"],
+      "abs": "https://arxiv.org/abs/1912.01734", "pdf": "https://arxiv.org/pdf/1912.01734", "code": null,
+      "summary": "家庭场景中由自然语言指令驱动的长时程具身任务，需视觉感知加多步动作加子目标记忆，是具身指令跟随的经典基准。"
+    },
+    {
+      "id": "1806.11532", "title": "TextWorld: A Learning Environment for Text-based Games",
+      "authors": "(Microsoft)", "date": "2018-06-29", "venue": "IJCAI18", "category": "Benchmark", "subcategory": "Embodied", "tags": ["Benchmark", "Embodied"],
+      "abs": "https://arxiv.org/abs/1806.11532", "pdf": "https://arxiv.org/pdf/1806.11532", "code": null,
+      "summary": "微软的文本冒险游戏沙盒，可程序化生成任务，考察智能体在部分可观测下的探索、记忆与推理，是早期「记忆加 RL」研究的常用平台。"
+    },
+    {
+      "id": "2602.22769", "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+      "authors": "(AMA-Bench 团队)", "date": "2026-02-26", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2602.22769", "pdf": "https://arxiv.org/pdf/2602.22769", "code": null,
+      "summary": "面向智能体应用的长时程记忆评测，覆盖真实应用场景中跨步骤、跨任务的信息保持与复用，强调超长时程下记忆系统的实际效用。"
+    },
+    {
+      "id": "2602.16313", "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+      "authors": "Yu Wang, Yuanzhe Hu 等", "date": "2026-02-12", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2602.16313", "pdf": "https://arxiv.org/pdf/2602.16313", "code": null,
+      "summary": "关键创新在跨会话相互依赖：后续会话任务依赖前序会话产出，迫使智能体真正记住并复用而非孤立完成，比独立任务基准更能暴露记忆缺陷。"
+    },
+    {
+      "id": "2509.25609", "title": "A Framework for Studying AI Agent Behavior: Evidence from Consumer Choice Experiments",
+      "authors": "Nikhil 等(ABxLab)", "date": "2025-09-30", "venue": "ICLR26", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2509.25609", "pdf": "https://arxiv.org/pdf/2509.25609", "code": null,
+      "summary": "借鉴消费者选择实验范式研究 AI 智能体行为(含记忆/偏好对决策的影响)，提供受控实验框架以量化智能体在重复选择中的一致性与偏差。"
+    },
+    {
+      "id": "2508.09124", "title": "OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows",
+      "authors": "Weixuan Wang, Saravan Rajmohan 等(Microsoft)", "date": "2025-08-12", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2508.09124", "pdf": "https://arxiv.org/pdf/2508.09124", "code": null,
+      "summary": "跨 Word/Excel/PDF/Email/Calendar 的长时程办公工作流基准，含 OdysseyBench+(300 真实任务)与 -Neo(302 合成复杂任务)，每个任务需从长交互历史中识别关键信息并跨应用多步推理。配套 HomerAgents 多智能体框架自动化生成基准，有效区分 SOTA 智能体。"
+    },
+    {
+      "id": "2412.14161", "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+      "authors": "(TheAgentCompany 团队)", "date": "2024-12-18", "venue": "Benchmark", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2412.14161", "pdf": "https://arxiv.org/pdf/2412.14161", "code": null,
+      "summary": "模拟一家软件公司的内部环境(网站、代码库、IM、同事)，让智能体完成软件工程/HR/财务等真实上班任务，考察长时程、跨工具协作。结果显示最强智能体仅能完成约四分之一任务。"
+    },
+    {
+      "id": "2409.20163", "title": "MemSim: A Bayesian Simulator for Evaluating Memory of LLM-based Personal Assistants",
+      "authors": "(MemSim 团队)", "date": "2024-09-30", "venue": "NeurIPS25", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2409.20163", "pdf": "https://arxiv.org/pdf/2409.20163", "code": "https://github.com/nuster1128/MemSim",
+      "summary": "用贝叶斯模拟器自动生成可靠的用户画像与问答，避免人工标注偏差，可控地评测个人助理的记忆质量(事实/偏好/时间)，支持大规模可扩展评测。"
+    },
+    {
+      "id": "2308.03688", "title": "AgentBench: Evaluating LLMs as Agents",
+      "authors": "(清华)", "date": "2023-08-07", "venue": "ICLR24", "category": "Benchmark", "subcategory": "Long-Horizon", "tags": ["Benchmark", "Long-Horizon"],
+      "abs": "https://arxiv.org/abs/2308.03688", "pdf": "https://arxiv.org/pdf/2308.03688", "code": "https://github.com/THUDM/AgentBench",
+      "summary": "首个多环境综合智能体评测(操作系统、数据库、知识图谱、卡牌游戏、网购、网页等 8 环境)，系统比较商用与开源 LLM 的智能体能力差距，奠定智能体多任务评测范式。"
+    },
+
+    {
+      "id": "2604.01007", "title": "Omni-SimpleMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+      "authors": "(Omni-SimpleMem 团队)", "date": "2026-04-01", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic", "Procedural", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2604.01007", "pdf": "https://arxiv.org/pdf/2604.01007", "code": null,
+      "summary": "用自动化科研(autoresearch)流程自动搜索/发现终身多模态记忆的设计方案，覆盖情景、语义、过程多类记忆，是把记忆架构设计本身交给智能体自动优化的尝试。"
+    },
+    {
+      "id": "2601.19834", "title": "Visual Generation Unlocks Human-Like Reasoning through Multimodal World Models",
+      "authors": "Mingsheng Long 等(ByteDance Seed)", "date": "2026-01-27", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "Internal", "SFT", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2601.19834", "pdf": "https://arxiv.org/pdf/2601.19834", "code": null,
+      "summary": "主张视觉生成能力可解锁类人推理：以多模态世界模型在脑内生成中间视觉状态，作为内部潜在记忆支撑多步推理与规划。"
+    },
+    {
+      "id": "2601.21468", "title": "MemOCR: Layout-Aware Visual Memory for Efficient Long-Horizon Reasoning",
+      "authors": "(MemOCR 团队)", "date": "2026-01-26", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2601.21468", "pdf": "https://arxiv.org/pdf/2601.21468", "code": null,
+      "summary": "针对长文档/多页视觉内容构建布局感知的视觉记忆(保留版式而非仅纯文本)，在长时程推理中高效检索关键页面/区域，降低重复阅读开销。"
+    },
+    {
+      "id": "2512.03627", "title": "MemVerse: Multimodal Memory for Lifelong Learning Agents",
+      "authors": "Junming Liu, Ding Wang 等", "date": "2025-12-03", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic", "Procedural", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2512.03627", "pdf": "https://arxiv.org/pdf/2512.03627", "code": "https://github.com/KnowledgeXLab/MemVerse",
+      "summary": "模型无关、即插即用的记忆框架，桥接快速参数化回忆与分层检索式记忆：短期记忆保留近期上下文，原始多模态经验转为层次化知识图谱形式的长期记忆，支持持续巩固、自适应遗忘与有界增长；引入周期性蒸馏把长期记忆压缩进参数模型，实现快速可微回忆且保持可解释，显著提升多模态推理与持续学习效率。"
+    },
+    {
+      "id": "2511.21678", "title": "ViLoMem: Agentic Learner with Grow-and-Refine Multimodal Semantic Memory",
+      "authors": "Weihao Bo 等", "date": "2025-11-26", "venue": "CVPR26", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Multimodal", "Semantic"],
+      "abs": "https://arxiv.org/abs/2511.21678", "pdf": "https://arxiv.org/pdf/2511.21678", "code": "https://github.com/weihao-bo/ViLoMem",
+      "summary": "指出轨迹式记忆有简短偏置且只记单模态痕迹，提出双流(dual-stream)schema 记忆：分别编码视觉分心模式与逻辑推理错误，按 grow-and-refine 增量累积可泛化策略、避免灾难性遗忘。六个多模态基准上稳定提升 pass@1 并显著减少重复的视觉/逻辑错误。"
+    },
+    {
+      "id": "2511.20785", "title": "LongVT: Incentivizing Thinking with Long Videos via Native Tool Calling",
+      "authors": "(LongVT 团队)", "date": "2025-11-25", "venue": "CVPR26", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Multimodal", "Procedural"],
+      "abs": "https://arxiv.org/abs/2511.20785", "pdf": "https://arxiv.org/pdf/2511.20785", "code": null,
+      "summary": "让模型以原生工具调用对长视频边看边想：把视频作为外部视觉记忆，按需放大/回看关键片段，激励用长视频思考的过程性推理。"
+    },
+    {
+      "id": "2511.11007", "title": "VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models",
+      "authors": "Shuicheng Yan 等", "date": "2025-11-14", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "Internal", "SFT", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2511.11007", "pdf": "https://arxiv.org/pdf/2511.11007", "code": null,
+      "summary": "为 VLM 引入潜在视觉记忆(latent vision memory)，以内部潜变量保留视觉信息，缓解多步推理中视觉细节丢失，释放 VLM 潜力。"
+    },
+    {
+      "id": "2510.16907", "title": "VAGEN: Reinforcing World Model Reasoning for Multi-Turn VLM Agents",
+      "authors": "(mll-lab-nu)", "date": "2025-10-19", "venue": "NeurIPS25", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "Internal", "RL-based", "Episodic", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2510.16907", "pdf": "https://arxiv.org/pdf/2510.16907", "code": "https://github.com/mll-lab-nu/VAGEN",
+      "summary": "用 RL 强化多轮 VLM 智能体的世界模型推理(状态估计加状态转移建模)，让智能体显式维护并更新对环境状态的内部表征，提升多轮视觉决策。"
+    },
+    {
+      "id": "2510.12422", "title": "VideoLucy: Deep Memory Backtracking for Long Video Understanding",
+      "authors": "(VideoLucy 团队)", "date": "2025-10-14", "venue": "NeurIPS25", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "SFT", "Episodic", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2510.12422", "pdf": "https://arxiv.org/pdf/2510.12422", "code": null,
+      "summary": "针对长视频理解提出深度记忆回溯：由粗到细、层次化地回看历史帧/片段，按需 backtrack 定位证据，缓解长视频信息丢失。"
+    },
+    {
+      "id": "2508.09736", "title": "M3-Agent: Seeing, Listening, Remembering, and Reasoning with Long-Term Memory",
+      "authors": "(ByteDance Seed)", "date": "2025-08-13", "venue": "ICLR26", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "SFT", "Episodic", "Multimodal", "Semantic"],
+      "abs": "https://arxiv.org/abs/2508.09736", "pdf": "https://arxiv.org/pdf/2508.09736", "code": "https://github.com/bytedance-seed/m3-agent",
+      "summary": "处理实时视频/音频流，构建以实体为中心的长期记忆(情景加语义)，让智能体看、听、记、推，配套 M3-Bench，是多模态长期记忆智能体的系统性代表工作。"
+    },
+    {
+      "id": "2508.08487", "title": "MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling",
+      "authors": "(MAViS 团队)", "date": "2025-08-11", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2508.08487", "pdf": "https://arxiv.org/pdf/2508.08487", "code": null,
+      "summary": "多智能体协作生成长序列视频故事，通过共享记忆维持人物/情节跨镜头的一致性，解决长视频生成的连贯性问题。"
+    },
+    {
+      "id": "2506.17218", "title": "Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual Tokens (Mirage)",
+      "authors": "Chuang Gan 等", "date": "2025-06-20", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "Internal", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2506.17218", "pdf": "https://arxiv.org/pdf/2506.17218", "code": "https://github.com/UMass-Embodied-AGI/Mirage",
+      "summary": "赋予模型心理意象：在不生成真实像素的前提下，用潜在视觉 token 在脑内想象并操作视觉表征，提升空间/多模态推理。"
+    },
+    {
+      "id": "2505.22657", "title": "3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model",
+      "authors": "(3DLLM-Mem 团队)", "date": "2025-05-28", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Multimodal", "Semantic"],
+      "abs": "https://arxiv.org/abs/2505.22657", "pdf": "https://arxiv.org/pdf/2505.22657", "code": null,
+      "summary": "为具身 3D LLM 构建长期时空记忆，记住三维场景中物体的位置与历史变化，支撑长时程具身导航与操作。"
+    },
+    {
+      "id": "2505.17670", "title": "Towards General Continuous Memory for Vision-Language Models",
+      "authors": "(Continuous Memory 团队)", "date": "2025-05-23", "venue": "NeurIPS25", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Internal", "SFT", "Episodic", "Multimodal", "Semantic"],
+      "abs": "https://arxiv.org/abs/2505.17670", "pdf": "https://arxiv.org/pdf/2505.17670", "code": null,
+      "summary": "提出通用的连续(向量化)记忆，把多模态经验编码为连续记忆表示供 VLM 读写，兼具外部检索与内部融合，泛化于多任务。"
+    },
+    {
+      "id": "2501.18564", "title": "SAM2Act: Integrating Visual Foundation Model with a Memory Architecture for Robotic Manipulation",
+      "authors": "(SAM2Act 团队)", "date": "2025-01-30", "venue": "Method", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Episodic", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2501.18564", "pdf": "https://arxiv.org/pdf/2501.18564", "code": "https://github.com/sam2act/sam2act",
+      "summary": "将视觉基础模型 SAM2 与记忆架构结合用于机器人操作，记住已观察的物体/状态以支持多步、需记忆的操作任务。"
+    },
+    {
+      "id": "2408.03615", "title": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "authors": "(JiuTian-VL)", "date": "2024-08-07", "venue": "NeurIPS24", "category": "Method", "subcategory": "Multimodal", "tags": ["Method", "External", "Prompt-based", "Multimodal"],
+      "abs": "https://arxiv.org/abs/2408.03615", "pdf": "https://arxiv.org/pdf/2408.03615", "code": "https://github.com/JiuTian-VL/Optimus-1",
+      "summary": "在 Minecraft 长时程任务中提出混合多模态记忆：分层有向知识图谱(语义)加抽象多模态经验池(情景)，显著提升长时程任务成功率，逼近人类水平。"
+    },
+
+    {
+      "id": "2603.19685", "title": "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",
+      "authors": "(Subgoal 团队)", "date": "2026-03-20", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Training-free", "Episodic", "Procedural"],
+      "abs": "https://arxiv.org/abs/2603.19685", "pdf": "https://arxiv.org/pdf/2603.19685", "code": null,
+      "summary": "将长时程任务分解为子目标并记忆其达成路径，免训练地复用子目标级经验，缓解长任务的规划漂移与重复探索。"
+    },
+    {
+      "id": "2602.14083", "title": "Plan-MCTS: Plan Exploration for Action Exploitation in Web Navigation",
+      "authors": "Weinan Zhang 等(上交)", "date": "2026-02-15", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "RL-based", "Procedural"],
+      "abs": "https://arxiv.org/abs/2602.14083", "pdf": "https://arxiv.org/pdf/2602.14083", "code": null,
+      "summary": "用 MCTS 做计划级探索、再在动作层利用所探索的计划，把高层规划与低层执行解耦，提升 Web 导航的长程成功率。"
+    },
+    {
+      "id": "2602.02474", "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+      "authors": "(MemSkill 团队)", "date": "2026-02-02", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "RL-based", "Procedural"],
+      "abs": "https://arxiv.org/abs/2602.02474", "pdf": "https://arxiv.org/pdf/2602.02474", "code": null,
+      "summary": "把可复用记忆技能作为一等对象，用 RL 学习并持续演化这些技能，实现智能体的自我进化。"
+    },
+    {
+      "id": "2510.00444", "title": "TokMem: Tokenized Procedural Memory for Large Language Models",
+      "authors": "(TokMem 团队)", "date": "2025-10-01", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "Internal", "SFT", "Procedural"],
+      "abs": "https://arxiv.org/abs/2510.00444", "pdf": "https://arxiv.org/pdf/2510.00444", "code": null,
+      "summary": "把常用过程/例程令牌化(tokenized)存入模型内部，像调用函数一样以特殊 token 触发，紧凑高效地复用过程性技能。"
+    },
+    {
+      "id": "2509.25140", "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+      "authors": "Siru Ouyang 等(Google)", "date": "2025-09-29", "venue": "ICLR26", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Episodic", "Procedural"],
+      "abs": "https://arxiv.org/abs/2509.25140", "pdf": "https://arxiv.org/pdf/2509.25140", "code": null,
+      "summary": "从智能体的成功与失败轨迹中蒸馏出可迁移的推理策略条目存入 ReasoningBank，检索复用以自我进化；并提出记忆感知的测试时扩展(MaTTS)，在 Web/工具使用任务上显著优于仅存原始轨迹的记忆。"
+    },
+    {
+      "id": "2509.25250", "title": "Memory Management and Contextual Consistency for Long-Running Low-Code Agents",
+      "authors": "(Low-Code Agents 团队)", "date": "2025-09-27", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Episodic", "Procedural"],
+      "abs": "https://arxiv.org/abs/2509.25250", "pdf": "https://arxiv.org/pdf/2509.25250", "code": null,
+      "summary": "面向长时间运行的低代码(low-code)智能体，设计记忆管理与上下文一致性机制，保证长周期运行中状态与流程不漂移。"
+    },
+    {
+      "id": "2506.06326", "title": "Memory OS of AI Agent (MemoryOS)",
+      "authors": "Jiazheng Kang, Ting Bai 等(北邮)", "date": "2025-05-30", "venue": "EMNLP25 Main", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Episodic", "Procedural", "Semantic"],
+      "abs": "https://arxiv.org/abs/2506.06326", "pdf": "https://arxiv.org/pdf/2506.06326", "code": "https://github.com/BAI-LAB/MemoryOS",
+      "summary": "借鉴操作系统的内存管理思想，设计分层存储(短期/中期/长期个人记忆)加四模块(存储、更新、检索、生成)。短到中按对话链 FIFO 更新，中到长用分段分页策略。在 LoCoMo 上 F1 平均提升 49.11%、BLEU-1 提升 46.18%(GPT-4o-mini)，是「记忆即 OS」范式的代表作。"
+    },
+    {
+      "id": "2502.12110", "title": "A-MEM: Agentic Memory for LLM Agents",
+      "authors": "Wujiang Xu 等", "date": "2025-02-17", "venue": "NeurIPS25", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Episodic", "Procedural", "Semantic"],
+      "abs": "https://arxiv.org/abs/2502.12110", "pdf": "https://arxiv.org/pdf/2502.12110", "code": "https://github.com/WujiangXu/A-mem",
+      "summary": "受 Zettelkasten(卡片盒笔记法)启发，把记忆组织为带结构化属性、可相互链接并随新经验动态演化的笔记网络，自动生成链接与上下文演进，灵活性强于固定 schema 的记忆。"
+    },
+    {
+      "id": "2409.07429", "title": "Agent Workflow Memory (AWM)",
+      "authors": "(zorazrw)", "date": "2024-09-11", "venue": "ICML", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Procedural"],
+      "abs": "https://arxiv.org/abs/2409.07429", "pdf": "https://arxiv.org/pdf/2409.07429", "code": "https://github.com/zorazrw/agent-workflow-memory",
+      "summary": "从过往轨迹中归纳出可复用的工作流(workflow)并存入记忆，供后续任务选择性复用，在 Mind2Web/WebArena 上显著提升成功率与泛化，支持在线/离线两种归纳。"
+    },
+    {
+      "id": "2306.07863", "title": "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+      "authors": "(ltzheng)", "date": "2023-06-13", "venue": "Method", "category": "Method", "subcategory": "Procedural", "tags": ["Method", "External", "Prompt-based", "Episodic", "Procedural"],
+      "abs": "https://arxiv.org/abs/2306.07863", "pdf": "https://arxiv.org/pdf/2306.07863", "code": "https://github.com/ltzheng/Synapse",
+      "summary": "提出轨迹即范例(trajectory-as-exemplar)提示加轨迹记忆：抽象状态、用完整示范轨迹作上下文范例，并从记忆检索相似轨迹，提升计算机控制任务(如 MiniWoB++、Mind2Web)的少样本表现。"
+    },
+
+    {
+      "id": "2604.18933", "title": "Gated Memory Policy (GMP)",
+      "authors": "Yihuai Gao, Shuran Song 等(斯坦福)", "date": "2026-04-21", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "Internal", "RL-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2604.18933", "pdf": "https://arxiv.org/pdf/2604.18933", "code": null,
+      "summary": "解决机器人操作中何时该用记忆、该记什么。提出记忆门控机制按需激活历史上下文，轻量交叉注意力构建潜在记忆表示，并向历史动作注入扩散噪声以增强鲁棒。在自建非马尔可夫基准 MemMimic 上平均成功率较长历史基线提升 30.1%，同时在马尔可夫任务上不退化。"
+    },
+    {
+      "id": "2604.18349", "title": "HiGMem: A Hierarchical and LLM-Guided Memory System for Long-Term Conversational Agents",
+      "authors": "Shuqi Cao, Fei Tan 等", "date": "2026-04-20", "venue": "ACL26 Findings", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Training-free", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2604.18349", "pdf": "https://arxiv.org/pdf/2604.18349", "code": "https://github.com/ZeroLoss-Lab/HiGMem",
+      "summary": "指出纯向量相似检索会产生臃肿证据集。提出两级事件-轮次记忆：用事件摘要作语义锚点，让 LLM 先看高层摘要、再聚焦少量值得读的轮次，经推理给出简洁可靠的证据集。LoCoMo10 上五类问题中四类 F1 最佳，对抗性 F1 从 0.54 提升到 0.78(对比 A-Mem)，且检索轮数减少一个数量级。"
+    },
+    {
+      "id": "2603.03296", "title": "PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents",
+      "authors": "(TIMAN-group)", "date": "2026-02-23", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Training-free", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2603.03296", "pdf": "https://arxiv.org/pdf/2603.03296", "code": "https://github.com/TIMAN-group/PlugMem",
+      "summary": "设计任务无关、即插即用的记忆模块，可挂载到不同智能体而无需重训，提升跨任务的记忆复用与可移植性。"
+    },
+    {
+      "id": "2602.17588", "title": "Modeling Distinct Human Interaction in Web Agents",
+      "authors": "(Web Agents 团队)", "date": "2026-02-19", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2602.17588", "pdf": "https://arxiv.org/pdf/2602.17588", "code": null,
+      "summary": "面向 Web 智能体建模不同用户的差异化交互，把个体交互历史作为情景记忆，提升对个性化操作模式的适应。"
+    },
+    {
+      "id": "2602.13530", "title": "REMem: Reasoning with Episodic Memory in Language Agent",
+      "authors": "Yu Su, Huan Sun 等(OSU)", "date": "2026-02-13", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2602.13530", "pdf": "https://arxiv.org/pdf/2602.13530", "code": null,
+      "summary": "将情景记忆与推理显式耦合：让语言智能体在推理过程中主动检索、引用并对情景记忆进行多步推断，而非简单拼接历史。"
+    },
+    {
+      "id": "2602.09712", "title": "TraceMem: Weaving Narrative Memory Schemata from User Conversational Traces",
+      "authors": "(港大)", "date": "2026-02-10", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2602.09712", "pdf": "https://arxiv.org/pdf/2602.09712", "code": null,
+      "summary": "从用户对话轨迹中编织出叙事记忆图式(narrative schemata)，把零散对话组织为结构化叙事，支撑对用户的连贯长期理解。"
+    },
+    {
+      "id": "2602.07755", "title": "ALMA: Learning to Continually Learn via Meta-learning Agentic Memory Designs",
+      "authors": "Yiming Xiong, Shengran Hu, Jeff Clune", "date": "2026-02-08", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "RL-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2602.07755", "pdf": "https://arxiv.org/pdf/2602.07755", "code": "https://github.com/zksha/alma",
+      "summary": "针对基础模型无状态瓶颈，提出用 Meta Agent 以开放式方式搜索以可执行代码表达的记忆设计(含数据库 schema 及其检索/更新机制)，自动元学习出优于人工设计的记忆方案。四个序贯决策域上学到的记忆设计全面超越 SOTA 人工记忆，朝自改进的持续学习系统迈进。"
+    },
+    {
+      "id": "2601.18771", "title": "Dep-Search: Learning Dependency-Aware Reasoning Traces with Persistent Memory",
+      "authors": "(Dep-Search 团队)", "date": "2026-01-27", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2601.18771", "pdf": "https://arxiv.org/pdf/2601.18771", "code": null,
+      "summary": "学习依赖感知的推理轨迹并存入持久记忆，显式建模步骤间依赖关系以支持复杂搜索/推理任务的复用。"
+    },
+    {
+      "id": "CAST", "title": "CAST: Character-and-Scene Episodic Memory for Agents",
+      "authors": "(CAST 团队)", "date": "2026-01-14", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic"],
+      "abs": null, "pdf": null, "code": null,
+      "summary": "以角色加场景为单位组织情景记忆，贴合叙事/角色扮演类智能体，便于按人物与场景检索相关经历。(列表未提供链接)"
+    },
+    {
+      "id": "2601.02553", "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents",
+      "authors": "Jiaqi Liu, Huaxiu Yao 等", "date": "2026-01-05", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2601.02553", "pdf": "https://arxiv.org/pdf/2601.02553", "code": "https://github.com/aiming-lab/SimpleMem",
+      "summary": "针对全历史冗余与迭代过滤高 token 成本的两难，提出基于语义无损压缩的三阶段管线：语义结构化压缩(多视图索引记忆单元)、在线语义合成(会话内即时整合去冗余)、意图感知检索规划(动态确定检索范围)。LoCoMo 上 F1 平均提升 26.4%，推理 token 最多降低 30 倍。"
+    },
+    {
+      "id": "2512.12818", "title": "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects",
+      "authors": "(Hindsight 团队)", "date": "2025-12-14", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2512.12818", "pdf": "https://arxiv.org/pdf/2512.12818", "code": null,
+      "summary": "强调记忆的保留-回忆-反思(retain/recall/reflect)闭环：不仅存取经历，还基于事后回顾(hindsight)反思并提炼经验，提升后续决策。"
+    },
+    {
+      "id": "biorxiv-2025.09.25.678592", "title": "A Neural Network Model of Free Recall Learns Multiple Memory Strategies",
+      "authors": "(Veritaria)", "date": "2025-09-25", "venue": "bioRxiv", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "Internal", "Episodic"],
+      "abs": "https://www.biorxiv.org/content/10.1101/2025.09.25.678592v1.abstract", "pdf": "https://www.biorxiv.org/content/10.1101/2025.09.25.678592v1.full.pdf", "code": "https://github.com/Veritaria/rnn-free-recall",
+      "summary": "认知/计算神经科学视角：训练 RNN 完成自由回忆(free recall)任务，发现网络自发学得多种记忆策略，为人工情景记忆的内部机制提供生物学类比与启示。"
+    },
+    {
+      "id": "2507.04607", "title": "PRIME: LLM Personalization with Cognitive Dual-Memory and Personalized Thought Process",
+      "authors": "(PRIME 团队)", "date": "2025-07-07", "venue": "EMNLP25 Main", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2507.04607", "pdf": "https://arxiv.org/pdf/2507.04607", "code": null,
+      "summary": "受认知科学双记忆启发，结合情景加语义双记忆与个性化思维过程，让模型按用户历史进行个性化推理，而不止于偏好对齐。"
+    },
+    {
+      "id": "2506.24019", "title": "Ella: Embodied Social Agents with Lifelong Memory",
+      "authors": "Chuang Gan 等", "date": "2025-06-30", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2506.24019", "pdf": "https://arxiv.org/pdf/2506.24019", "code": null,
+      "summary": "为具身社交智能体赋予终身记忆，使其在开放世界中记住交互对象、社交关系与经历，支撑长期社会化行为与角色一致性。"
+    },
+    {
+      "id": "2504.19413", "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "authors": "(Mem0 团队)", "date": "2025-04-28", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2504.19413", "pdf": "https://arxiv.org/pdf/2504.19413", "code": null,
+      "summary": "面向生产可用的可扩展长期记忆：动态抽取、整合、检索对话中的关键信息(含图记忆 Mem0g 变体)。在 LoCoMo 上兼顾准确率与低延迟/低 token，是业界落地的代表性开源记忆层。"
+    },
+    {
+      "id": "2502.15957", "title": "R3Mem: Bridging Memory Retention and Retrieval via Reversible Compression",
+      "authors": "(R3Mem 团队)", "date": "2025-02-21", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic"],
+      "abs": "https://arxiv.org/abs/2502.15957", "pdf": "https://arxiv.org/pdf/2502.15957", "code": null,
+      "summary": "用可逆压缩统一保留与检索两个常相互矛盾的目标：压缩侧最大化信息保留、解压侧支持高保真重构检索，兼顾长期保存与精确召回。"
+    },
+    {
+      "id": "2405.14831", "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "authors": "Yu Su 等(OSU)", "date": "2024-05-23", "venue": "NeurIPS24", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Training-free", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2405.14831", "pdf": "https://arxiv.org/pdf/2405.14831", "code": "https://github.com/OSU-NLP-Group/HippoRAG",
+      "summary": "模拟海马体索引理论：从语料构建开放知识图谱，用 Personalized PageRank 做单步多跳检索，免训练地实现知识整合。在多跳 QA 上大幅超越传统 RAG，是 graph-RAG 记忆的奠基工作。"
+    },
+    {
+      "id": "2305.10250", "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+      "authors": "(MemoryBank 团队)", "date": "2023-05-17", "venue": "Method", "category": "Method", "subcategory": "Episodic", "tags": ["Method", "External", "Prompt-based", "Episodic", "Semantic"],
+      "abs": "https://arxiv.org/abs/2305.10250", "pdf": "https://arxiv.org/pdf/2305.10250", "code": null,
+      "summary": "早期长期记忆框架，引入受艾宾浩斯遗忘曲线启发的更新机制，让记忆随时间强化或淡忘；落地于情感陪伴智能体 SiliconFriend，是个性化长期记忆的早期代表。"
+    },
+
+    {
+      "id": "2508.13250", "title": "Explicit v.s. Implicit Memory: Multi-hop Complex Reasoning Over Personalized Information",
+      "authors": "Zeyu Zhang, Xu Chen 等(人大)", "date": "2025-08-15", "venue": "SIGKDD26", "category": "Method", "subcategory": "Semantic", "tags": ["Method", "External", "Internal", "Prompt-based", "Semantic"],
+      "abs": "https://arxiv.org/abs/2508.13250", "pdf": "https://arxiv.org/pdf/2508.13250", "code": "https://github.com/nuster1128/MPR",
+      "summary": "指出已有个性化记忆多停留在偏好对齐与简单 QA。提出多跳个性化推理新任务并构建数据集与统一评测框架，系统比较显式(外部检索)与隐式(参数化)记忆的优劣，并提出融合两者的 HybridMem，结论是两种范式各有短板、混合方法更稳健。"
+    },
+    {
+      "id": "2502.14802", "title": "From RAG to Memory: Non-Parametric Continual Learning for LLMs (HippoRAG 2)",
+      "authors": "(OSU)", "date": "2025-02-20", "venue": "ICML25", "category": "Method", "subcategory": "Semantic", "tags": ["Method", "External", "Internal", "Prompt-based", "Semantic"],
+      "abs": "https://arxiv.org/abs/2502.14802", "pdf": "https://arxiv.org/pdf/2502.14802", "code": "https://github.com/OSU-NLP-Group/HippoRAG",
+      "summary": "HippoRAG 的升级版，把 RAG 推进为真正的记忆：在事实记忆、意义建构(sense-making)、关联记忆三方面更深地整合段落与知识图谱，实现非参数化的持续学习，全面超越标准 RAG 与前代，逼近持续学习目标。"
+    },
+
+    {
+      "id": "2602.10560", "title": "When to Memorize and When to Stop: Gated Recurrent Memory for Long-Context Reasoning",
+      "authors": "(ByteDance Seed)", "date": "2026-02-11", "venue": "Method", "category": "Method", "subcategory": "Internal", "tags": ["Method", "Internal", "SFT"],
+      "abs": "https://arxiv.org/abs/2602.10560", "pdf": "https://arxiv.org/pdf/2602.10560", "code": null,
+      "summary": "为长上下文推理设计门控循环记忆，让模型学会何时记、何时停，动态决定将哪些中间状态压入循环记忆，平衡保留与效率。"
+    },
+    {
+      "id": "2512.12967", "title": "QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management",
+      "authors": "(Qwen 团队)", "date": "2025-12-25", "venue": "Method", "category": "Method", "subcategory": "Internal", "tags": ["Method", "Internal", "SFT"],
+      "abs": "https://arxiv.org/abs/2512.12967", "pdf": "https://arxiv.org/pdf/2512.12967", "code": null,
+      "summary": "给出面向长上下文推理与记忆管理的后训练(post-training)配方，通过训练让模型更好地在超长上下文中保持、调度与利用关键信息。"
+    },
+    {
+      "id": "2509.24704", "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
+      "authors": "Guibin Zhang, Shuicheng Yan 等", "date": "2025-09-29", "venue": "Method", "category": "Method", "subcategory": "Internal", "tags": ["Method", "Internal"],
+      "abs": "https://arxiv.org/abs/2509.24704", "pdf": "https://arxiv.org/pdf/2509.24704", "code": "https://github.com/KANABOON1/MemGen",
+      "summary": "认为参数化记忆硬改权重、检索式记忆外置数据库都未能捕捉人类推理与记忆交织的特性。提出 memory trigger(监控推理状态、决定何时调用记忆)加 memory weaver(据当前状态生成潜在 token 序列作机器原生记忆)，在推理全程动态回忆并增强。八个基准上较 ExpeL/AWM 最高提升 38.22%、较 GRPO 提升 13.44%，且无显式监督即自发涌现规划、过程、工作记忆等类人记忆官能。"
+    },
+    {
+      "id": "2506.12928", "title": "Scaling Test-time Compute for LLM Agents",
+      "authors": "King Zhu, Wangchunshu Zhou 等", "date": "2025-06-15", "venue": "ICLR26", "category": "Method", "subcategory": "Internal", "tags": ["Method", "Internal", "Prompt-based"],
+      "abs": "https://arxiv.org/abs/2506.12928", "pdf": "https://arxiv.org/pdf/2506.12928", "code": null,
+      "summary": "首个系统研究测试时计算扩展在语言智能体上的效果：并行采样、序贯修订、验证器与合并、多样化 rollout。结论是扩展测试时计算可提升智能体表现，知道何时反思很关键，list-wise 验证合并最佳，增加多样化 rollout 有正面作用。"
+    },
+
+    {
+      "id": "2601.12538", "title": "Agentic Reasoning for Large Language Models",
+      "authors": "Heng Ji 等", "date": "2026-01-18", "venue": "Method", "category": "Method", "subcategory": "Other", "tags": ["Method", "Prompt-based", "Training-free"],
+      "abs": "https://arxiv.org/abs/2601.12538", "pdf": "https://arxiv.org/pdf/2601.12538", "code": null,
+      "summary": "聚焦智能体式推理范式——让 LLM 在推理中调用工具、记忆与环境反馈协同求解复杂问题，免训练地提升复杂推理与任务完成能力。"
+    },
+    {
+      "id": "2510.04206", "title": "AgentRL: Scaling Agentic Reinforcement Learning with a Multi-Turn, Multi-Task Framework",
+      "authors": "Jie Tang 等(清华)", "date": "2025-10-05", "venue": "Method", "category": "Method", "subcategory": "Other", "tags": ["Method", "RL-based"],
+      "abs": "https://arxiv.org/abs/2510.04206", "pdf": "https://arxiv.org/pdf/2510.04206", "code": null,
+      "summary": "提出可扩展的多轮、多任务智能体强化学习框架，统一训练跨任务的智能体策略(含记忆/状态利用)，推动 agentic RL 的规模化。"
+    }
+  ]
+}
