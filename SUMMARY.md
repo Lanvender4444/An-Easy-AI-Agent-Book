@@ -15,9 +15,9 @@
 * [第二部分：Agent 的进化论](part2/README.md)
     * [第六章：Prompt Engineering](part2/chapter6/README.md)
     * [第七章：ReAct](part2/chapter7/README.md)
-      * [7.1：ReAct——开始的开始](part2/chapter7/section1.md)
+      * [7.1：ReAct —— 开始的开始](part2/chapter7/section1.md)
     * [ContextEngineering]
-    * [HarnessEngineering](part2/chapter9/README.md)
+    * [第九章：HarnessEngineering](part2/chapter9/README.md)
       * [9.1：Agent = Model + Harness](part2/chapter9/section1.md)
       * [9.2：拆解 Harness](part2/chapter9/section2.md)
       * [9.3：Skills](part2/chapter9/section3.md)
@@ -31,9 +31,22 @@
   * [第十二章：记忆系统](part3/chapter12/README.md)
     * [12.1 记忆流水线](part3/chapter12/section1.md)
 * [第四部分：主流框架]
-  * [PydanticAI（pi）]
-  * [LangChain生态（LangChain/LangGraph/LangSmith]
-  * [OpenAIAgentsSDK]
-  * [CrewAI]
-  * [JS/TS生态]
+  * [第十三章：PydanticAI（pi）]
+  * [第十四章：LangChain生态（LangChain/LangGraph/LangSmith](part4/chapter14/README.md)
+    * [14.1：](part4/chapter14/README.md)
+  * [第十五章：OpenAIAgentsSDK]
+  * [第十六章：CrewAI]
+  * [第十七章：JS/TS生态]
+* [第五部分：Agent拆解](part5/README.md)
+  * [第十八章：Open Notebook —— 垂直应用型 Agent 拆解](part5/open-notebook/README.md)
+    * [1：整体架构与技术栈](part5/open-notebook/section1.md)
+    * [2：数据层与 AI 抽象层](part5/open-notebook/section2.md)
+    * [3：LangGraph 工作流与异步任务](part5/open-notebook/section3.md)
+    * [4：用 RAG/记忆/Harness 透镜回看](part5/open-notebook/section4.md)
+  * [第十九章：Claude Code —— 通用编码 Agent Harness 拆解](part5/claude-code/README.md)
+    * [1：总览 —— Model + Harness 与开放式 Agent Loop](part5/claude-code/section1.md)
+    * [2：引导层与记忆层](part5/claude-code/section2.md)
+    * [3：工具层 / 权限层 / 生命周期层](part5/claude-code/section3.md)
+    * [4：编排层与扩展生态](part5/claude-code/section4.md)
+    * [5：两个 Agent 的对照与借鉴](part5/claude-code/section5.md)
 * [附录](appendix/README.md)
